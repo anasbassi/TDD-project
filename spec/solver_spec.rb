@@ -18,4 +18,24 @@ describe Solver do
     solver = Solver.new
     expect(solver.reverse('hello')).to eq('olleh')
   end
+
+  it 'should return fizz when given 3' do
+    solver = Solver.new
+    expect(solver.fizzbuzz(3)).to eq('Fizz')
+  end
+
+  it 'should return Buzz when given 5' do
+    solver = Solver.new
+    expect(solver.fizzbuzz(5)).to eq('Buzz')
+  end
+
+  it 'should return FizzBuzz when given 15' do
+    solver = Solver.new
+    expect(solver.fizzbuzz(15)).to eq('FizzBuzz')
+  end
+
+  it 'should return "7" when given 7' do
+    solver = Solver.new
+    expect(solver.fizzbuzz(7)).to eq('7')
+  end
 end
