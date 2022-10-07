@@ -1,3 +1,5 @@
+require_relative '../solver'
+
 describe Solver do
   it 'should return 1 when given 0' do
     solver = Solver.new
@@ -11,7 +13,7 @@ describe Solver do
 
   it 'should return error when given -1' do
     solver = Solver.new
-    expect(solver.factorial(-1)).to raise_error(Error)
+    expect { solver.factorial(-1) }.to raise_error(ArgumentError)
   end
 
   it 'should return olleh when given hello' do
@@ -19,7 +21,7 @@ describe Solver do
     expect(solver.reverse('hello')).to eq('olleh')
   end
 
-  it 'should return fizz when given 3' do
+  it 'should return Fizz when given 3' do
     solver = Solver.new
     expect(solver.fizzbuzz(3)).to eq('Fizz')
   end
