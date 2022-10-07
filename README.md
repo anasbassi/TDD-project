@@ -1,6 +1,6 @@
 # TDD Project
 
-> A test driven development project that starts with writing unit test for methos before withing the methods.
+> A test driven development project that starts with writing unit test for methods before writing them.
 
 ## Built With
 
@@ -18,8 +18,7 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - Clone the repository using `git clone git@github.com:anasbassi/TDD-project.git`
-- Navigate to the folder using `cd school-library`
-- Use this command to run the app `ruby main.rb`
+- Navigate to the folder using `cd TDD-project`
 
 ## Authors
 
@@ -53,4 +52,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
